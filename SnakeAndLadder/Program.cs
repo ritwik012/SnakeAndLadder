@@ -9,6 +9,7 @@ namespace SnakeAndLadder
             Console.WriteLine("WELCOME TO SNAKE AND LADDER SIMULATOR");
             SnakeAndLadder playerOne = new SnakeAndLadder();
             playerOne.DieRoll();
+            playerOne.PlayerCheck();
         }
     }
 }
