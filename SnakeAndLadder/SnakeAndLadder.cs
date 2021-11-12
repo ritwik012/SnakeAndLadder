@@ -26,6 +26,10 @@ namespace SnakeAndLadder
                         break;
                     case LADDER:
                         this.playerPosition += dieRoll;
+                        if (this.playerPosition > WINNING)
+                        {
+                            this.playerPosition -= dieRoll;
+                        }
                         Console.WriteLine("Got Ladder");
                         break;
                     case SNAKE:
